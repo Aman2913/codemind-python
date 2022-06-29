@@ -1,3 +1,2 @@
-radius=int(input())
-area=3.14*radius**2
-print(area)
+r = int(input())
+print(round(float(3.14*r*r),2))
