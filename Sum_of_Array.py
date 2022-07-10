@@ -1,3 +1,6 @@
-n=int(input())
-m=list(map(int,input().split()))
-print(sum(m))
+n = int(input())
+arr = list(map(int,input().split()))
+sum = 0
+for i in range(0,n):
+        sum+=arr[i]
+print(sum)
