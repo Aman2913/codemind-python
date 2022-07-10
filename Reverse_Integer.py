@@ -1,9 +1,16 @@
 n=int(input())
-n = str(n)
-if n[0] == '-':
-    a = int('-' + n[-1:0:-1])
-    print(a)
+rev=0
+if n>0:
+     while n:
+        rev=rev*10+n%10
+        n//=10
+        if n==0:
+            print(rev)
 else:
-    a = int(n[::-1])
-    print(a)
-    
+    n*=-1
+    while n:
+        rev=rev*10+n%10
+        n//=10
+        if n==0:
+            rev=str(rev)
+            print("-"+rev)
