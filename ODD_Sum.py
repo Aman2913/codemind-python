@@ -1,7 +1,7 @@
-n=int(input())
-m=list(map(int,input().split()))
-odd=0
+n = int(input())
+arr = list(map(int,input().split()))
+sum = 0
 for i in range(0,n):
-    if m[i]%2==1:
-        odd+=m[i]
-print(odd)
+    if arr[i]%2:
+        sum+=arr[i]
+print(sum)
