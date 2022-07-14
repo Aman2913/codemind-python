@@ -1,15 +1,14 @@
-def prime(a):
-    if a==1:
+def prime(n):
+    if n==1:
         return False
-    for i in range(2,int(a**0.5)+1):
-        if a%i==0:
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
             return False
     return True
-a = int(input())
-b = int(input())
-p=0
-while a<=b:
-    if prime(a):
-        p+=1
-    a+=1
-print(p)
+n=int(input())
+a=int(input())
+c=0
+for i in range(n,a+1):
+    if prime(i):
+        c+=1
+print(c)
