@@ -1,12 +1,11 @@
 n=int(input())
 while True:
-    s=0
-    while n>0:
-        p=n%10
-        s+=p
+    p=0
+    while n:
+        p+=n%10
         n//=10
-    if len(str(s))==1:
-            print(s)
-            break
+    if len(str(p))==1:
+        print(p)
+        break
     else:
-        n=s
+        n=p
