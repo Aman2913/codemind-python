@@ -7,4 +7,5 @@ for i in range(n):
 if c==1:
     print("YES")
 else:
-    print("NO")
+    print('NO')
+        
