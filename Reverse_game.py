@@ -1,10 +1,10 @@
 n=int(input())
 x=list(map(int,input().split()))
 for i in range(n):
-    s=0
     temp=x[i]
+    rev=0
     while temp:
-        s=s*10+temp%10
+        rev=rev*10+temp%10
         temp//=10
-    print(s,end=' ')
+    print(rev,end=' ')
         
