@@ -1,16 +1,12 @@
-n = int(input())
-x = 0
-while n!=1:
-    if n%2==0:
-        n//=2
-    elif n%3==0:
-        n//=3
-    elif n%5==0:
-        n//=5
-    else:
-        x+=1
-        break
-if x==0:
+def ugly(n):
+    if n==0:
+        return False
+    for i in [2,3,5]:
+        while n%i==0:
+            n/=i
+    return n==1
+x=int(input())
+if ugly(x):
     print("Ugly Number")
 else:
     print("Not Ugly Number")
