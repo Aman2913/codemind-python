@@ -10,9 +10,5 @@ for i in range(a,b+1):
             break
         if i%p==0:
             c+=1
-    if c==len(str(i)):                               
+    if c==len(str(i)):
         print(i,end=' ')
-
-
-
-    
