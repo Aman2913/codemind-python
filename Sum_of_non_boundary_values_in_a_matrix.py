@@ -1,9 +1,11 @@
-n,x=map(int,input().split())
+n,m=map(int,input().split())
+mat=[]
 s=0
-for j in range(n):
-    m=list(map(int,input().split()))
-    for i in range(len(m)):
-        if j!=0 and j!=(n-1):
-            if i!=0 and i!=(len(m)-1):
-                s=s+m[i]
+for i in range(n):
+    x=list(map(int,input().split()))
+    mat.append(x)
+for i in range(n):
+    for j in range(m):
+        if (i!=0 and j!=0) and (i!=n-1 and j!=m-1):
+            s+=mat[i][j]
 print(s)
