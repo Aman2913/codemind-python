@@ -1,7 +1,7 @@
 n = int(input())
-arr = list(map(int,input().split()))
-c = 0
-for i in range(n-2):
-    if arr[i]%2 and arr[i+1]%2 and arr[i+2]%2:
+x = list(map(int,input().split()))
+c=0
+for i in range(1,n-1):
+    if x[i-1]%2!=0 and x[i]%2!=0 and x[i+1]%2!=0:
         c+=1
 print(c)
