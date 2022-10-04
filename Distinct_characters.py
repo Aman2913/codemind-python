@@ -1,8 +1,5 @@
-n=input().lower()
-temp=[]
-for i in n:
-    if n.count(i)==1 and  i!=" ":
-        temp.append(i)
-        temp.sort()
-for i in temp:
-    print(i,end='')
+a=input()
+c=0
+for i in range(0,26):
+    if chr(97+i) in a:
+        print(chr(97+i),end='')
