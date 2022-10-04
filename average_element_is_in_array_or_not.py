@@ -1,7 +1,6 @@
 n = int(input())
-arr = list(map(int,input().split()))
-avg = sum(arr)//n
-if avg in arr:
-    print(True)
-else:
-    print(False)
+
+x = list(map(int,input().split()))
+
+avg = int(sum(x)/n)
+print(avg in x)
