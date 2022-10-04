@@ -1,4 +1,4 @@
 n = int(input())
-arr = list(map(int,input().split()))
-a = sum(arr)/n
-print("%.2f"%a)
+x = list(map(int,input().split()))
+
+print('{:.2f}'.format(sum(x)/n))
