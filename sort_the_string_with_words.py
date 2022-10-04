@@ -1,3 +1,3 @@
-s=input().split()
-for i in sorted(s):
-    print(i,end=' ')
+s=input().lower()
+s=s.split(' ')
+print(*sorted(s))
