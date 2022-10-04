@@ -1,7 +1,4 @@
 n = int(input())
-arr = list(map(int,input().split()))
-k = int(input())
-if k in arr:
-    print(True)
-else:
-    print(False)
+x = list(map(int,input().split()))
+z = int(input())
+print(z in x)
