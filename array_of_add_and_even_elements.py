@@ -1,8 +1,8 @@
 n=int(input())
 x=list(map(int,input().split()))
-for i in range(n):
-    if x[i]%2==1:
-        print(x[i],end=' ')
-for j in range(n):
-    if x[j]%2==0:
-        print(x[j],end=' ')
+for i in x:
+    if i%2==1:
+        print(i,end=" ")
+for j in x:
+    if j%2==0:
+        print(j,end=" ")
