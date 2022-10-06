@@ -1,12 +1,9 @@
 n=int(input())
 x=list(map(int,input().split()))
-q=0
-for i in range(n):
-    s=0
-    temp=x[i]
-    s+=temp%10
-    temp//=10
-    p=(s+temp)
-    q+=p
-print(q)
-    
+s=0
+for i in x:
+    while (i!=0):
+        rem=i%10
+        i//=10
+        s+=rem
+print(s)        
