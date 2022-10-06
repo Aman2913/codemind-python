@@ -1,8 +1,12 @@
 n,m=map(int,input().split())
-x=list(map(int,input().split()))
-y=list(map(int,input().split()))
-temp = []
-for i in x:
-    if i in y and i not in temp:
-        print(i,end=' ')
+n1=list(map(int,input().split()))
+n2=list(map(int,input().split()))
+temp=[]
+for i in n1:
+    if (i  in n2) and (i not in temp):
         temp.append(i)
+        print(i,end=" ")
+for i in n2:
+    if (i in n1 ) and (i not in temp):
+        temp.append(i)
+        print(i,end=" ")
