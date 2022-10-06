@@ -5,4 +5,4 @@ s=0
 for i in range(n):
     if x[i]>=a and x[i]<=b:
         s+=x[i]
-print(s)  
+print(s)        
