@@ -5,16 +5,14 @@ def prime(n):
         if n%i==0:
             return False
     return True
-n=int(input())
-x=list(map(int,input().split()))
-s=0
-p=0
-for i in range(n):
-    if prime(x[i]):
-        s+=x[i]
-        p+=1
-print('%.2f'%(s/p))
-
-
-        
     
+n=int(input())
+s=0
+c=0
+x=list(map(int,input().split()))
+for i in x:
+    if prime(i):
+        s+=i
+        c+=1
+avg=s/c
+print("{:.2f}".format(avg))
