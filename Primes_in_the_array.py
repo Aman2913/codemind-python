@@ -6,9 +6,9 @@ def prime(n):
             return False
     return True
 n=int(input())
-x=list(map(int,(input().split())))
 c=0
-for i in range(n):
-    if prime(x[i]):
+x=list(map(int,input().split()))
+for i in x:
+    if prime(i):
         c+=1
 print(c)
