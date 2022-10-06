@@ -1,3 +1,3 @@
-n = int(input())
-x = set(map(int,input().split()))
+n=int(input())
+x=list(set(map(int,input().split())))
 print(sum(x))
