@@ -9,3 +9,5 @@ for i in x:
         print(i,end=" ")
 if c==0:
     print(-1)
+
+   
